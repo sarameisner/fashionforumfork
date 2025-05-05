@@ -39,19 +39,24 @@ body {
   font-weight: 700;
 }
 
-h1 {
-  font-family: 'Studio6Medium';
+h1, h2, h3, h4, h5, p {
+font-family: 'Studio6Regular';
 }
-h2 {
-  font-family: 'Studio6Medium';
+.bg-modeColor {
+  background-color: #F2F2F2;
 }
-h3 {
-  font-family: 'Studio6Medium';}
 
-  h4 {
-    font-family: 'Studio6Medium'; }
-    h5 {
-      font-family: 'Studio6Medium'; }
-      p {
-        font-family: 'Studio6Regular';
-      }
+.bg-beautyColor {
+  background-color: #E6E5E5;
+}
+
+.bg-podcastColor {
+  background-color: #D9D9D9;
+}
+
+.bg-jobPortalColor {
+  background-color: #C5C7C9;
+}
+
+.stroked-text {
+  -webkit-text-stroke: 0.3px black; }
