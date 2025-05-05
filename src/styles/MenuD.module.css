@@ -1,0 +1,40 @@
+.bar {
+  position: fixed;
+  width: 60px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  font-size: 14px;
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+  color: white;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.logoBar {
+  background: black;
+  left: 0;
+  z-index: 20;
+  transform: rotate(0deg);
+}
+
+.label {
+  transform: rotate(0deg);
+}
+
+.mode {
+  background-color: #ff6b6b;
+}
+.beauty {
+  background-color: #6b5b95;
+}
+.podcast {
+  background-color: #88b04b;
+}
+.job {
+  background-color: #f7cac9;
+}
