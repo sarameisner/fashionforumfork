@@ -5,7 +5,10 @@ export default function Beauty() {
     <div>
       <h1>Beauty</h1>
       <p>Velkommen til Beauty!</p>
-      <Footer />
+      <div className="ml-[120px]">
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 }

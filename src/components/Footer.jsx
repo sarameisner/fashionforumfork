@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer style={{ backgroundColor: bgColor }} className="w-full overflow-hidden px-6 py-20 mt-32 text-black">
-      <div className={`max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 w-full ${getLeftPadding()}`}>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 w-full">
         <div className="flex-1 space-y-3 text-sm">
           <h2 className="text-lg font-medium">Fashion Forum</h2>
           <p>

@@ -4,7 +4,10 @@ export default function Jobportal() {
     <div>
       <h1>Jobportal</h1>
       <p>Velkommen til jobportalen!</p>
-      <Footer />
+      <div className="ml-[290px]">
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 }
