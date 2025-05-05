@@ -1,8 +1,8 @@
-// components/Cards.jsx
-'use client'; // hvis du er i app directory med Next 13+
+
+'use client'; 
 
 import { useEffect, useState } from 'react';
-import supabase from '../lib/supabase'; // tilpas sti hvis nødvendigt
+import supabase from '../lib/supabase'; 
 
 const Cards = () => {
   const [artikler, setArtikler] = useState([]);
@@ -25,7 +25,7 @@ const Cards = () => {
 
   return (
     <div>
-      {artikler.map(post => (
+      {artikler.map(artikler => (
         <div key={artikler.id}>
           <h2>{artikler.overskrift}</h2>
           <p>{artikler.forfatter}</p>
