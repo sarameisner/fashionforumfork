@@ -26,7 +26,7 @@ export default function MenuD() {
       <nav className={styles.container}>
         {/* Logo always at left: 0 */}
         <Link href="/" className={`${styles.bar} ${styles.logoBar}`}>
-          <span className={styles.label}>FashionForum</span>
+          <span className={styles.label}>Fashion <br></br>Forum</span>
         </Link>
   
         {tabs.map((tab, index) => {

@@ -9,15 +9,23 @@
   font-weight: bold;
   font-size: 14px;
   transform: rotate(180deg);
-  transition: all 0.5s ease-in-out;
-  color: white;
+  transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+  color: black;
   pointer-events: auto;
   z-index: 10;
 }
 
 .logoBar {
-  background: black;
+  background: white;
   left: 0;
+  display: flex;
+  justify-content: flex-start;   /* start horisontalt */
+  align-items: flex-start;       /* start vertikalt */
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);     /* gør teksten læsbar lodret */
+  padding: 10px;
+  font-size: 1.3rem;
+  line-height: 1;
   z-index: 20;
   transform: rotate(0deg);
 }
@@ -27,14 +35,55 @@
 }
 
 .mode {
-  background-color: #ff6b6b;
+  display: flex;
+  justify-content: flex-start;   /* start horisontalt */
+  align-items: flex-start;       /* start vertikalt */
+  writing-mode: vertical-rl;
+  padding: 10px;
+  font-size: 1.3rem;
+  background-color: #F2F2F2;
+
 }
+.mode:hover {
+  background-color: #FFFED9;
+}
+
 .beauty {
-  background-color: #6b5b95;
+  background-color: #E6E5E5;
+  display: flex;
+  justify-content: flex-start;   /* start horisontalt */
+  align-items: flex-start;       /* start vertikalt */
+  writing-mode: vertical-rl;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.beauty:hover {
+  background-color: #FFE3F5;
 }
 .podcast {
-  background-color: #88b04b;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: flex-start;   /* start horisontalt */
+  align-items: flex-start;       /* start vertikalt */
+  writing-mode: vertical-rl;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.podcast:hover {
+  background-color: #D3EEFF;
 }
 .job {
-  background-color: #f7cac9;
+  background-color: #C5C7C9 ;
+  display: flex;
+  justify-content: flex-start;   /* start horisontalt */
+  align-items: flex-start;       /* start vertikalt */
+  writing-mode: vertical-rl;
+  padding: 10px;
+  font-size: 1.3rem;
+  
+}
+.job:hover {
+  background-color: #5EAEC9 ;
+  transition: 0.0s ease-in-out;
+ 
 }
