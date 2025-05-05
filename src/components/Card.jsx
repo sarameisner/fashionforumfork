@@ -1,5 +1,4 @@
-
-'use client'; 
+'use client';
 
 import { useEffect, useState } from 'react';
 import supabase from '../lib/supabase'; 
@@ -10,8 +9,8 @@ const Cards = () => {
   useEffect(() => {
     const fetchData = async () => {
       const { data, error } = await supabase
-        .from('fashionforum') 
-        .select('id, overskrift, forfatter'); 
+        .from('fashionforum')
+        .select('id, overskrift, forfatter, image'); // Hent image_url fra fashionforum tabellen
 
       if (error) {
         console.error('Fejl ved hentning:', error);
@@ -25,10 +24,14 @@ const Cards = () => {
 
   return (
     <div>
-      {artikler.map(artikler => (
-        <div key={artikler.id}>
-          <h2>{artikler.overskrift}</h2>
-          <p>{artikler.forfatter}</p>
+      {artikler.map((artikel) => (
+        <div key={artikel.id}>
+          <h2>{artikel.overskrift}</h2>
+          <p>{artikel.forfatter}</p>
+          {/* Vis billede hvis image_url findes */}
+          {artikel.image && (
+            <img src={artikel.image} alt={artikel.overskrift} width="200" height="200" />
+          )}
         </div>
       ))}
     </div>
