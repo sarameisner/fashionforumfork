@@ -22,5 +22,36 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Studio6Regular', sans-serif;
 }
+
+@font-face {
+  font-family: 'Studio6Regular';
+  src: url('/fonts/Studio6-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Studio6Medium';
+  src: url('/fonts/Studio6-Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Studio6Medium';
+}
+h2 {
+  font-family: 'Studio6Medium';
+}
+h3 {
+  font-family: 'Studio6Medium';}
+
+  h4 {
+    font-family: 'Studio6Medium'; }
+    h5 {
+      font-family: 'Studio6Medium'; }
+      p {
+        font-family: 'Studio6Regular';
+      }
