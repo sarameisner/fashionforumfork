@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import supabase from '../lib/supabase'; // tilpas sti hvis nødvendigt
 
 const Cards = () => {
-  const [posts, setPosts] = useState([]);
+  const [artikler, setArtikler] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +16,7 @@ const Cards = () => {
       if (error) {
         console.error('Fejl ved hentning:', error);
       } else {
-        setPosts(data);
+        setArtikler(data);
       }
     };
 
@@ -25,10 +25,10 @@ const Cards = () => {
 
   return (
     <div>
-      {posts.map(post => (
-        <div key={post.id}>
-          <h2>{post.overskrift}</h2>
-          <p>{post.forfatter}</p>
+      {artikler.map(post => (
+        <div key={artikler.id}>
+          <h2>{artikler.overskrift}</h2>
+          <p>{artikler.forfatter}</p>
         </div>
       ))}
     </div>
