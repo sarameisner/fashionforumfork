@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { usePathname } from "next/navigation";
 
@@ -16,10 +17,21 @@ const Footer = () => {
   const bgColor = getBackgroundColor();
 
   return (
-    <footer style={{ backgroundColor: bgColor }} className="w-full overflow-hidden px-6 py-20 mt-32 text-black">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 w-full">
-        <div className="flex-1 space-y-3 text-sm">
-          <h2 className="text-lg font-medium">Fashion Forum</h2>
+    <footer style={{ backgroundColor: bgColor }} className="relative w-full overflow-hidden px-6 py-20 mt-32 text-black">
+      <div className="relative w-full md:max-w-3xl md:mx-auto pt-20 flex flex-col items-center md:flex-row md:justify-between md:items-start gap-8 md:gap-12">
+        <div className="block text-2xl font-bold leading-none space-y-1 text-center mb-4 md:absolute md:top-[-48px] md:left-16 md:transform md:rotate-90 md:origin-top-left">
+          <span className="block">Fashion</span>
+          <span className="block">Forum</span>
+        </div>
+
+        <div className="order-2 md:order-2 space-y-4 text-lg text-center md:text-right w-full md:w-auto">
+          <p>Kontakt os</p>
+          <p>Mediekit</p>
+          <p>Om os</p>
+          <p>Job annoncer</p>
+        </div>
+
+        <div className="order-3 md:order-1 flex-1 space-y-3 text-sm md:ml-6">
           <p>
             Fashion Forum
             <br />
@@ -34,12 +46,6 @@ const Footer = () => {
             <br />
             CVR: DK 41 62 72 12
           </p>
-        </div>
-        <div className="space-y-3 text-sm text-right">
-          <p>Kontakt os</p>
-          <p>Mediekit</p>
-          <p>Om os</p>
-          <p>Job annoncer</p>
         </div>
       </div>
     </footer>
