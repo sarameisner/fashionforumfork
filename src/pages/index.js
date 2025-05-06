@@ -1,13 +1,10 @@
-
 import DiagonalStripe from "@/components/Design";
 import Cards from "@/components/Card";
 import HeroSlide from "@/components/HeroSlide";
 
-
-
-
 export default function Home() {
   return (
+<<<<<<< HEAD
     <>
     <div className="ml-[60px mr-[240px]">
     <HeroSlide/>
@@ -15,5 +12,12 @@ export default function Home() {
 <Cards/>
 </div>  
     </>
+=======
+    <div>
+      <DiagonalStripe color="#FFE3F5" />
+
+      <Cards />
+    </div>
+>>>>>>> sarasbranch
   );
 }

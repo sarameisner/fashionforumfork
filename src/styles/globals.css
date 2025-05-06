@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,41 +22,47 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Studio6Regular', sans-serif;
+  font-family: "Studio6Regular", sans-serif;
 }
 
 @font-face {
-  font-family: 'Studio6Regular';
-  src: url('/fonts/Studio6-Regular.otf') format('opentype');
+  font-family: "Studio6Regular";
+  src: url("/fonts/Studio6-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Studio6Medium';
-  src: url('/fonts/Studio6-Medium.otf') format('opentype');
+  font-family: "Studio6Medium";
+  src: url("/fonts/Studio6-Medium.otf") format("opentype");
   font-style: normal;
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, p {
-font-family: 'Studio6Regular';
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Studio6Regular";
 }
 .bg-modeColor {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .bg-beautyColor {
-  background-color: #E6E5E5;
+  background-color: #e6e5e5;
 }
 
 .bg-podcastColor {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .bg-jobPortalColor {
-  background-color: #C5C7C9;
+  background-color: #c5c7c9;
 }
 
 .stroked-text {
-  -webkit-text-stroke: 0.3px black; }
+  -webkit-text-stroke: 0.3px black;
+}

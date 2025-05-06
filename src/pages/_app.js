@@ -1,6 +1,7 @@
+// src/pages/_app.js
 import "@/styles/globals.css";
-import '@/styles/globals.css';
-import MenuD from '@/components/MenuD';
+import "@/styles/globals.css";
+import MenuD from "@/components/MenuD";
 import MenuM from "@/components/MenuM";
 
 export default function App({ Component, pageProps }) {
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
       </div>
 
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
