@@ -4,10 +4,6 @@ export default function Podcast() {
     <div>
       <h1>Podcast</h1>
       <p>Velkommen til Podcast!</p>
-      <div className="ml-[240px]">
-        {" "}
-        <Footer />
-      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { usePathname } from "next/navigation";
 
@@ -12,19 +11,6 @@ const Footer = () => {
     if (pathname.includes("/podcast")) return "#D3EEFF";
     if (pathname.includes("/jobportal")) return "#5EAEC9";
     return "#FFE3F5";
-  };
-
-  const getRightPadding = () => {
-    if (pathname.includes("/mode")) return "md:pr-[120px]";
-    if (pathname.includes("/beauty")) return "md:pr-[120px]";
-    if (pathname.includes("/podcast")) return "md:pr-[120px]";
-    if (pathname.includes("/jobportal")) return "md:pr-[160px]";
-    return "md:pr-0";
-  };
-
-  const getLeftPadding = () => {
-    if (pathname === "/") return "md:pl-[140px]";
-    return "pl-0";
   };
 
   const bgColor = getBackgroundColor();
@@ -49,7 +35,7 @@ const Footer = () => {
             CVR: DK 41 62 72 12
           </p>
         </div>
-        <div className={`space-y-3 text-sm text-right ${getRightPadding()}`}>
+        <div className="space-y-3 text-sm text-right">
           <p>Kontakt os</p>
           <p>Mediekit</p>
           <p>Om os</p>
