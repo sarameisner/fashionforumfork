@@ -5,6 +5,7 @@ export default function Jobportal() {
     <div className="ml-[300px]">
       <h1>Jobportal</h1>
       <p>Velkommen til jobportalen!</p>
+      <Footer></Footer>
     </div>
   );
 }
