@@ -75,3 +75,6 @@ h3 {
 .stroked-text {
   -webkit-text-stroke: 0.3px black;
 }
+.clip-diagonal {
+  clip-path: polygon(0 100%, 100% 60%, 100% 0, 0 0);
+}

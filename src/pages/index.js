@@ -5,6 +5,7 @@ import HeroSlide from "@/components/HeroSlide";
 import Footer from "@/components/Footer";
 import MidtCards from "@/components/MidtCard";
 import MostReads from "@/components/MostReads"
+import News from "@/components/NewsLetter";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
 
           <MostReads minId={14} maxId={19}/>
           <h2 className="pb-10 pt-20">Flere nyheder</h2><Cards minId={20} maxId={25} />
+          <News/>
         <Footer/>
       </div>
     </>

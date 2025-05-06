@@ -26,7 +26,6 @@ const Footer = () => {
 
         <div className="order-2 md:order-2 space-y-4 text-lg text-center md:text-right w-full md:w-auto">
           <p>Kontakt os</p>
-          <p>Mediekit</p>
           <p>Om os</p>
           <p>Job annoncer</p>
         </div>
