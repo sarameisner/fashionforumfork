@@ -7,7 +7,7 @@ export default function DiagonalStripe({ color = '#ff6b6b' }) {
           backgroundColor: color,
           transform: 'rotate(15deg)',
           position: 'absolute',
-          top: '1000px',
+          top: '1700px',
           left: '-25%',
           zIndex: -1,
         }}
