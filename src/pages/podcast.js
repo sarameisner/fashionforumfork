@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer";
 export default function Podcast() {
-  return (
-    <div className="ml-[240px] mr-[60px]">
-      <h1>Podcast</h1>
-      <p>Velkommen til Podcast!</p>
-    </div>
-  );
-}
+    return (
+      <div className="lg:ml-[240px] lg:mr-[60px]">
+        <h1>Podcast</h1>
+        <p>Velkommen til Podcast!</p>
+      </div>
+    );
+  }
