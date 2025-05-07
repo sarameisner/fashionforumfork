@@ -19,12 +19,12 @@ export default function Mode() {
       <Undermenu activeTag={selectedTag} onChange={setSelectedTag} />
       <Design color="#FFFED9" height="350px" position="20%"/>
       <MidtSlide categori="Mode" minId={15} maxId={18} bgColor="#FFFED9" />
-      <h2 className="pt-10 pb-10 ">Seneste nyheder</h2>
+      <h2 className="p-5 pt-10 pb-10 ">Seneste nyheder</h2>
       <Cards categori="Mode" minId={15} maxId={21} selectedTag={selectedTag} />
       <div className="mb-20"><JobCards jobtype="Mode" minId={1} maxId={4} designColor="#fffed9"/>
     <Knap1 text="Se alle" link="/jobportal"/></div>
       <MostReads minId={22} maxId={27} />
-      <h2 className="pt-50 pb-10 ">Flere mode nyheder</h2>
+      <h2 className="pt-50 p-5 pb-10 ">Flere mode nyheder</h2>
       <Cards categori="Mode" minId={28} maxId={30} selectedTag={selectedTag} />
       <News/>
       <Footer />

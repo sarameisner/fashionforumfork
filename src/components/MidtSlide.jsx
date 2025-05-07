@@ -84,10 +84,10 @@ const Slide = ({ artikel, position, animateIn = false, zIndex }) => {
         animateIn ? 'animate-in' : ''
       }`}
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center h-full">
+      <div className="flex flex-col  sm:grid sm:grid-cols-2 gap-4 items-center h-full">
         {artikel.image && (
           <img
-            className="w-[400px] h-[400px] sm:w-[1000px] object-cover"
+            className="w-[400px] h-[200px]  sm:w-[1000px] sm:h-[400px] object-cover"
             src={artikel.image}
             alt={artikel.overskrift}
             width="400"

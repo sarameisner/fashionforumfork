@@ -31,7 +31,7 @@ const JobCards = ({minId, maxId, designColor, tags, jobtype}) => {
         fetchData();
       }, [minId, maxId, tags]);
     return (  <>
-    <h2 className="pt-10">Nyeste {jobtype} jobs</h2>
+    <h2 className="p-5 pt-10">Nyeste {jobtype} jobs</h2>
     <div className=' flex flex-col sm:grid sm:grid-cols-2 mt-20  max-w-[1000px] m-auto'>
     <Design color={designColor} height="350px"/>
       {jobs.map((job) => (

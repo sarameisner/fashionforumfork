@@ -43,7 +43,7 @@ const Cards = ({minId, maxId, selectedTag, categori}) => {
   return (
     <>
     
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[500px] sm:w-[700px] lg:w-[1100px]'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 sm:m-auto lg:grid-cols-3 w-full sm:w-[700px] lg:w-[1100px]'>
       {filteredArticles.map((artikel) => (
         <div key={artikel.id} className='mb-10'>
           <Link href={`/artikler/${artikel.id}`}>
@@ -60,7 +60,7 @@ const Cards = ({minId, maxId, selectedTag, categori}) => {
               <p>{artikel.dato} -</p>
               <p className='pl-1'>{artikel.tags}</p>
             </div>
-            <h3 className="w-[300px] hover:underline">{artikel.overskrift}</h3>
+            <h3 className="w-full lg:w-[300px] hover:underline">{artikel.overskrift}</h3>
           </Link>
         </div>
       ))}

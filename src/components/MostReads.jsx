@@ -46,7 +46,7 @@ const MostReads = ({ minId, maxId }) => {
         <div className="pt-2 text-sm text-gray-600 ">
           <p>{artikel.dato} - <span>{artikel.tags}</span></p>
         </div>
-        <h3 className=" w-[400px] sm:w-[300px] text-lg font-semibold pt-1 hover:underline ">
+        <h3 className=" w-full sm:w-[300px] text-lg font-semibold pt-1 hover:underline ">
           {artikel.overskrift}
         </h3>
       </Link>
@@ -56,8 +56,8 @@ const MostReads = ({ minId, maxId }) => {
 
   return (
     <>
-    <h2 className='pt-10 pb-10'>Ugens mest læste</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto w-[500px] md:w-[1100px]">
+    <h2 className='p-5 pt-10 pb-10'>Ugens mest læste</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6  max-w-6xl m-auto w-full lg:w-[1100px]">
       {/* Venstre kolonne */}
       <div className="flex flex-col justify-start">
         {col1.map(renderCard)}
