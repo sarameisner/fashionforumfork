@@ -12,7 +12,7 @@ const News = () => {
               Få de seneste opdateringer og nyheder direkte i din indbakke og hør om alle de nyeste jobs
             </p>
   
-            <form className="flex flex-col sm:flex-row gap-4 justify-center">
+            <form className="flex flex-col sm:flex-row cursor-pointer gap-4 justify-center">
               <input
                 type="email"
                 placeholder="Din email"
@@ -20,7 +20,7 @@ const News = () => {
               />
               <button
                 type="submit"
-                className="bg-black text-white px-6 py-2 hover:bg-white hover:text-black hover:border hover:border-black transition"
+                className="bg-black cursor-pointer text-white px-6 py-2 hover:bg-white hover:text-black hover:border hover:border-black transition"
               >
                 Tilmeld
               </button>

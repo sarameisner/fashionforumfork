@@ -78,3 +78,6 @@ h3 {
 .clip-diagonal {
   clip-path: polygon(0 100%, 100% 60%, 100% 0, 0 0);
 }
+.clip-slide {
+  clip-path: polygon(200% 100%, 60% 160%, 100% 100%, 0 10%);
+}

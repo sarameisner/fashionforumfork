@@ -1,11 +1,21 @@
+'use client'
 import Footer from "@/components/Footer";
+import { useState
+ } from "react";
+ import JobCards from "@/components/JobCard";
+import UndermenuJob from "@/components/UndermenuJob";
+
 
 export default function Jobportal() {
+    const [selectedTag, setSelectedTag] = useState('Alle jobs');
   return (
-    <div className="ml-[300px]">
-      <h1>Jobportal</h1>
-      <p>Velkommen til jobportalen!</p>
-      <Footer></Footer>
+    <div className="lg:ml-[300px]">
+       
+        
+
+<UndermenuJob activeTag={selectedTag} onChangeTag={setSelectedTag} />
+<JobCards minId={0} maxId={999} designColor="#5eaec9" tags={selectedTag} />
+      <Footer/>
     </div>
   );
 }
