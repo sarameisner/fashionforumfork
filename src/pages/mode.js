@@ -9,13 +9,20 @@ import MostReads from "@/components/MostReads";
 import Design from "../components/Design";
 import JobCards from "@/components/JobCard";
 import Knap1 from "@/components/Knap1";
+import Head from "next/head";
 
 
 export default function Mode() {
   const [selectedTag, setSelectedTag] = useState("Alle artikler");
 
   return (
+    <>
+    <Head>
+  <title>Mode – Fashion Forum</title>
+  <meta name="description" content="Dyk ned i de seneste modenyheder, tendenser og brancheanalyser fra den danske og internationale modeverden." />
+</Head>
     <div className=" lg:ml-[120px]  lg:mr-[170px]">
+        
       <Undermenu activeTag={selectedTag} onChange={setSelectedTag} />
       <Design color="#FFFED9" height="350px" position="20%"/>
       <MidtSlide categori="Mode" minId={15} maxId={18} bgColor="#FFFED9" />
@@ -29,5 +36,6 @@ export default function Mode() {
       <News/>
       <Footer />
     </div>
+    </>
   );
 }

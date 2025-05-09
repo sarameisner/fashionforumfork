@@ -9,12 +9,19 @@ import MostReads from "@/components/MostReads";
 import Design from "../components/Design";
 import JobCards from "@/components/JobCard";
 import Knap1 from "@/components/Knap1";
+import Head from "next/head";
 
 
 export default function Beauty() {
   const [selectedTag, setSelectedTag] = useState("Alle artikler");
 
   return (
+    <>
+    <Head>
+  <title>Beauty – Fashion Forum</title>
+  <meta name="description" content="Hold dig opdateret på beauty-branchen med artikler om trends, produkter, bæredygtighed og personlig pleje." />
+</Head>
+
     <div className=" lg:ml-[180px]  lg:mr-[110px]">
       <Undermenu activeTag={selectedTag} onChange={setSelectedTag} />
       <Design color="#FFE3F5" height="350px" position="20%"/>
@@ -29,5 +36,6 @@ export default function Beauty() {
       <News/>
       <Footer />
     </div>
+    </>
   );
 }

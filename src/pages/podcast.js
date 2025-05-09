@@ -3,8 +3,14 @@ import UndermenuPod from "@/components/UndermenuPod";
 import Design from "@/components/Design";
 import PodcastCard from "@/components/PodcastCard";
 import News from "@/components/NewsLetter";
+import Head from "next/head";
 export default function Podcast() {
     return (
+        <>
+        <Head>
+  <title>Podcast – Fashion Forum</title>
+  <meta name="description" content="Lyt til Fashion Forums podcasts med indsigter, interviews og fortællinger fra mode- og livsstilsbranchen." />
+</Head>
       <div className="lg:ml-[240px] lg:mr-[50px]">
         <Design color="#D3EEFF" height="350px" position="20%"/>
  <div className=" flex-col lg:flex-row items-center lg:flex sm:items-start gap-10 ">
@@ -74,6 +80,7 @@ export default function Podcast() {
         <News/>
         <Footer></Footer>
       </div>
+      </>
     );
   }
 

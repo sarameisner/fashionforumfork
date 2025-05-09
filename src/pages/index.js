@@ -8,12 +8,17 @@ import MostReads from "@/components/MostReads"
 import News from "@/components/NewsLetter";
 import { useState } from "react";
 import JobCards from "@/components/JobCard";
+import Head from "next/head";
 
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState("Alle artikler");
   return (
     <>
+    <Head>
+        <title>Fashion Forum – Forside</title>
+        <meta name="forside" content="Læs de nyeste nyheder, podcast og jobopslag på Fashion Forum." />
+      </Head>
       <div className="  lg:ml-[60px] lg:mr-[240px]">
         <HeroSlide />
         <h2 className="p-5 pt-10 pb-10 ">Nyeste nyheder</h2>
