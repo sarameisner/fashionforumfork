@@ -25,7 +25,7 @@ export default function Beauty() {
     <Knap1 text="Se alle" link="/jobportal"/></div>
       <MostReads minId={1} maxId={5} />
       <h2 className="p-5 pt-50 pb-10 ">Flere beauty nyheder</h2>
-      <Cards categori="Beauty" minId={28} maxId={30} selectedTag={selectedTag} />
+      <Cards categori="Beauty" minId={10} maxId={15} selectedTag={selectedTag} />
       <News/>
       <Footer />
     </div>
