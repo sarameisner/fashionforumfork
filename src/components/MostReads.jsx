@@ -43,7 +43,7 @@ const MostReads = ({ minId, maxId }) => {
         />
       )}
       <Link href={`/artikler/${artikel.id}`}>
-        <div className="pt-2 text-sm text-gray-600 ">
+        <div className="pt-2  ">
           <p>{artikel.dato} - <span>{artikel.tags}</span></p>
         </div>
         <h3 className=" w-full sm:w-[300px] text-lg font-semibold pt-1 hover:underline ">

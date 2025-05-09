@@ -97,7 +97,7 @@ const Slide = ({ artikel, position, animateIn = false, zIndex }) => {
         
         <div>
           <Link href={`/artikler/${artikel.id}`}>
-            <div className="flex pt-2 w-[400px] text-sm text-gray-600">
+            <div className="flex pt-2 w-[400px] ">
               <p>{artikel.dato} -</p>
               <p className="pl-1">{artikel.tags}</p>
             </div>
