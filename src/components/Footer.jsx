@@ -2,6 +2,7 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -26,7 +27,9 @@ const Footer = () => {
 
         <div className="order-2 md:order-2 space-y-4 text-lg text-center md:text-right w-full md:w-auto">
           <p className="hover:underline cursor-pointer">Kontakt os</p>
-          <p className="hover:underline cursor-pointer">Om os</p>
+          <Link href="/omos" className="hover:underline cursor-pointer">
+            Om os
+          </Link>
           <p className="hover:underline cursor-pointer">Job annoncer</p>
         </div>
 
