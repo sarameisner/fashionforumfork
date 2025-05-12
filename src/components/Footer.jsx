@@ -26,11 +26,12 @@ const Footer = () => {
         </div>
 
         <div className="order-2 md:order-2 space-y-4 text-lg text-center md:text-right w-full md:w-auto">
-          <p className="hover:underline cursor-pointer">Kontakt os</p>
+          <Link href="/omos"><p className="hover:underline cursor-pointer">Kontakt os</p></Link>
           <Link href="/omos" className="hover:underline cursor-pointer">
             Om os
           </Link>
-          <p className="hover:underline cursor-pointer">Job annoncer</p>
+          <Link href="/jobportal">
+          <p className="hover:underline cursor-pointer">Job annoncer</p></Link>
         </div>
 
         <div className="order-3 md:order-1 flex-1 space-y-3 text-sm md:ml-6">
