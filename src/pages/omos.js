@@ -14,11 +14,11 @@ export default function OmOs() {
         <title>Om os – Fashion Forum</title>
         <meta name="description" content="Læs om hvem vi er hos Fashion Forum – Danmarks førende digitale medie og jobportal for modebranchen." />
       </Head>
-      <Redaktion />
+      <div className=" lg:ml-[60px] lg:mr-[240px]"><Redaktion />
       <Quote />
       <AboutText />
       <News />
-      <Footer />
+      <Footer /></div>
     </>
   );
 }
