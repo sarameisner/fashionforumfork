@@ -42,7 +42,7 @@ const MidtCards = ({ minId, maxId }) => {
           <Design color="#c5c7c9" height="350px"/>
           <div>
             <Link href={`/artikler/${artikel.id}`}>
-              <div className="flex pt-2  m-auto w-[300px] text-sm text-gray-600">
+              <div className="flex pt-2  m-auto w-[300px]">
                 <p>{artikel.dato} -</p>
                 <p className="pl-1">{artikel.tags}</p>
               </div>
