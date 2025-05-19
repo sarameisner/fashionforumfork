@@ -40,17 +40,17 @@ const MidtCards = ({ minId, maxId }) => {
             />
           )}
           <Design color="#c5c7c9" height="350px"/>
-          <div>
+          <div className='pl-5'>
             <Link href={`/artikler/${artikel.id}`}>
-              <div className="flex pt-2  m-auto w-[300px]">
+              <div className="flex pt-2  m-auto w-[400px]">
                 <p>{artikel.dato} -</p>
                 <p className="pl-1">{artikel.tags}</p>
               </div>
-              <h3 className="text-xl font-semibold w-[300px] m-auto pt-2 hover:underline">
+              <h3 className="text-xl font-semibold w-[300px] pt-2 hover:underline">
                 {artikel.overskrift}
               </h3>
               {artikel.content && (
-                <p className="pt-2 text-gray-700 text-sm m-auto w-[300px] line-clamp-3">
+                <p className="pt-2s w-[300px] line-clamp-3">
                   {artikel.content.slice(0, 150)}...
                 </p>
               )}
