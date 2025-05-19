@@ -45,7 +45,7 @@ export default function Podcast() {
 <div className="p-5 pt-20 pb-10">
     <h2>Seneste podcast</h2>
   </div>
-  <div className="grid justify-center  sm:grid sm:grid-cols-2">
+  <div className="grid justify-center lg:w-[1000px] m-auto  sm:grid sm:grid-cols-2">
         
         <PodcastCard  imageSrc="https://fashionforum.dk/wp-content/uploads/2024/08/ss25-copenhagen-fashion-week-rotate-runway-2x3-james-cochrane-31-scaled.jpg"
   date="12.08.25 - Fashion"

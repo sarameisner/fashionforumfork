@@ -11,7 +11,7 @@ const UndermenuJob = ({ activeTag, onChangeTag }) => {
           id="tag-select"
           value={activeTag}
           onChange={(e) => onChangeTag(e.target.value)}
-          className="block w-[70%] cursor-pointer pl-4 py-2  bg-white"
+          className="block w-[70%] cursor-pointer pl-4 py-2  "
         >
           {tags.map((tag) => (
             <option key={tag} value={tag}>
@@ -19,7 +19,7 @@ const UndermenuJob = ({ activeTag, onChangeTag }) => {
             </option>
           ))}
         </select>
-        <button className=" hover:underline">Min konto</button>
+        <button className=" hover:underline cursor-pointer">Min konto</button>
       </div>
 
       {/* Vandrette knapper for store skærme */}
@@ -29,7 +29,7 @@ const UndermenuJob = ({ activeTag, onChangeTag }) => {
             <button
               key={tag}
               onClick={() => onChangeTag(tag)}
-              className={` pr-10 pt-5 transition ${
+              className={` pr-10 pt-5 transition cursor-pointer ${
                 activeTag === tag ? 'underline ' : 'hover:underline'
               }`}
             >
@@ -38,7 +38,7 @@ const UndermenuJob = ({ activeTag, onChangeTag }) => {
           ))}
         </div>
         <div className="pt-5">
-          <button className=" hover:underline">Min konto</button>
+          <button className=" hover:underline cursor-pointer">Min konto</button>
         </div>
       </div>
     </div>

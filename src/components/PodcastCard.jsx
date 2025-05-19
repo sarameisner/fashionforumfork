@@ -29,13 +29,13 @@ const PodcastCard = ({
       </div>
       <div className="flex gap-4">
         
-        <a href={spotifyLink} target="_blank" rel="noopener noreferrer" className='flex gap-2'>
+        <a href={spotifyLink} target="_blank" rel="noopener noreferrer" className='flex gap-2 hover:underline'>
           <Image src="/play.svg" alt="Spotify" width={20} height={20} />Spotify
         </a>
-        <a href={appleLink} target="_blank" rel="noopener noreferrer" className='flex gap-2'>
+        <a href={appleLink} target="_blank" rel="noopener noreferrer" className='flex gap-2 hover:underline'>
           <Image src="/play.svg" alt="Apple Podcast" width={20} height={20} />Apple Podcast
         </a>
-        <a href={podimoLink} target="_blank" rel="noopener noreferrer" className='flex gap-2'>
+        <a href={podimoLink} target="_blank" rel="noopener noreferrer" className='flex gap-2 hover:underline'>
           <Image src="/play.svg" alt="Podimo" width={20} height={20} />Podimo
         </a>
       </div>
