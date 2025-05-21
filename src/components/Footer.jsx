@@ -12,7 +12,7 @@ const Footer = () => {
     if (pathname.includes("/beauty")) return "#FFE3F5";
     if (pathname.includes("/podcast")) return "#D3EEFF";
     if (pathname.includes("/jobportal")) return "#5EAEC9";
-    return "#FFE3F5";
+    if (pathname.includes("/anonncepris")) return "#5EAEC9";
   };
 
   const bgColor = getBackgroundColor();

@@ -8,18 +8,21 @@ const tabs = [
   { label: 'Beauty', path: '/beauty', className: styles.beauty },
   { label: 'Podcast', path: '/podcast', className: styles.podcast },
   { label: 'Jobportal', path: '/jobportal', className: styles.job },
+
 ];
 
 export default function MenuD() {
     const router = useRouter();
     const currentPath = router.pathname;
   
-    const [activeTabIndex, setActiveTabIndex] = useState(
-      tabs.findIndex(tab => tab.path === currentPath)
-    );
+    const [activeTabIndex, setActiveTabIndex] = useState(() => {
+      const path = currentPath === '/anonncepris' ? '/jobportal' : currentPath;
+      return tabs.findIndex(tab => tab.path === path);
+    });
   
     useEffect(() => {
-      setActiveTabIndex(tabs.findIndex(tab => tab.path === currentPath));
+      const path = currentPath === '/anonncepris' ? '/jobportal' : currentPath;
+      setActiveTabIndex(tabs.findIndex(tab => tab.path === path));
     }, [currentPath]);
   
     return (
