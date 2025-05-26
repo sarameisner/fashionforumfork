@@ -1,3 +1,4 @@
+// quote til om os siden
 import Design from "@/components/Design";
 
 export default function Quote() {

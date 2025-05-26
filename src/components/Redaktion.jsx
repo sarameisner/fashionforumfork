@@ -1,3 +1,4 @@
+// komponent til om os siden
 export default function Redaktion() {
   return (
     <section className="py-16 pt-25 lg:pt-10 px-4 max-w-6xl mx-auto">
