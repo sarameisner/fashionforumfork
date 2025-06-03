@@ -10,7 +10,7 @@ const PrisCard = ({
   onClick,
 }) => {
   return (
-    <div className="bg-gray-100  p-6  max-w-md h-full flex flex-col justify-between w-full">
+    <div className="bg-[#d3eeff]  p-6  max-w-l h-full flex flex-col justify-between w-full">
         <div className="p-5 h-">
       <h3 className="text-xl font-semibold mb-2">{titel}</h3>
       <p className="">{pris}</p></div>
