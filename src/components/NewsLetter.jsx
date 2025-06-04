@@ -53,7 +53,7 @@ const News = () => {
               {/* Submit button */}
               <button
                 type="submit"
-                className="bg-black text-white px-6 py-2 hover:bg-white hover:text-black hover:border hover:border-black transition"
+                className="bg-black text-white px-6 py-2 hover:bg-white hover:text-black hover:border hover:border-black transition cursor-pointer"
               >
                 Tilmeld
               </button>
