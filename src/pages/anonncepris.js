@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PrisCard from "@/components/PrisCard";
 import PrisCard2 from "@/components/PrisCard2";
 import NewsLetter from "@/components/NewsLetter"
+import Contact from "@/components/Contact";
 
 const Anonncepris = () => {
   return (
@@ -70,7 +71,9 @@ Vil du sikre, at din jobannonce når så bredt og effektivt ud som muligt? Så e
           <PrisCard2 titel="6x standardannoncer" pris="15.400 DKK (eks. moms)" point="2.567 DKK" point2="4.400 DKK" ekstraPris="Prisen er 18.700 DKK (eks.moms)" onClick={() => alert("Valgt!")} />
           <PrisCard2 titel="12x standardannoncer" pris="27.500 DKK (eks. moms)" point="2.292 DKK" point2="12.100 DKK" ekstraPris="Prisen er 34.100 DKK (eks.moms)" onClick={() => alert("Valgt!")} />
         </div>
+        <div className="mt-20 mb-20"><Contact/></div>
         <NewsLetter/>
+        
         <Footer />
       </div>
     </>
